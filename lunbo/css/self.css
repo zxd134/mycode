@@ -1,0 +1,104 @@
+			@charset "utf-8";
+			/*关于使用flex布局的好处以及要注意的地方*/
+			/*使用flex会使子元素的float,clear和 vertical-align 属性失效。使用flex可以做到float能做的事*/
+			* {
+				margin: 0 auto;
+				padding: 0;
+				/*以下代码解决auto不居中问题*/
+				text-align: center;
+			}
+			.outer{
+
+				margin: 100px auto;
+				/*以下两行代码实现任何浏览器inline-block没有间隙 也就是空格没宽度*/
+				font-size: 0;
+    			letter-spacing: -1px;
+			}
+			.outer button:first-child{
+				background:#0da89b;
+				color:white;
+			}
+			
+			
+			/*左导航*/
+			.wrap{
+				/*margin-top: 20px;*/
+			}
+			.nav-l{
+				width:90px;
+				height:326px;
+				background-color: #151717;
+				display: inline-block;
+			}
+			button {
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				display: block;
+				border: none;
+				outline: none;
+				margin-top: 10px;
+				margin-right: 20px;
+			}
+			
+			/*右边图片*/
+			.tab-content{
+				display: inline-block;
+				vertical-align: top;
+			}
+			.tab-content img {
+				width: 567px;
+				height: 326px;
+				border: none;
+			}
+			
+			.tab-content>.active {
+				display: block;
+			}
+			
+			.tab-pane {
+				display: none;
+				white-space: nowrap;
+			}
+
+		
+			/*上导航*/
+			.nav-t{
+
+				width: 657px;
+				height:50px;
+				background-color: wheat;
+
+			}
+			.t-l{
+				float: left;
+			}
+			.nav-t img{
+				width: 90px;
+				height:auto;
+				border:none;
+				margin-top: 12px;
+				margin-left: 20px;
+				margin-right: 60px;
+			}
+			.t-r ul{
+				/*list-style-type: none;*/
+			}
+			.t-r li{
+				font-size: 16px;
+				float: left;
+				padding-left: 20px;				
+				line-height: 50px;
+			}
+			li a{
+				text-decoration:none;
+			}
+			/*.nav-t:after{
+				clear: both;
+				content: '';
+				height:0;
+				overflow: hidden;
+			}*/
+			.t-r li:last-child{
+				color: red;
+			}

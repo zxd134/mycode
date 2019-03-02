@@ -1,0 +1,5 @@
+$(function(){
+	fnHover();
+	fnTime();
+	imgHover();
+})

@@ -1,0 +1,111 @@
+			/*本页面私有样式*/
+			.outer{
+
+				margin: 100px auto;
+				/*以下两行代码实现任何浏览器inline-block没有间隙 也就是空格没宽度*/
+				/*font-size: 0;
+    			letter-spacing: -1px;*/
+			}
+			.outer button:first-child{
+				background:#0da89b;
+				color:white;
+			}
+			
+			
+			/*左导航*/
+			.wrap{
+				width: 657px;
+				height: 326px;
+				border: 1px solid yellow;
+				overflow: hidden;
+			}
+			.nav-l-wrap{
+				width: 657px;
+				height: 376px;
+				border: 1px solid red;
+				position: relative;
+			}
+			.nav-l{
+				width:90px;
+				height:326px;
+				background-color: #151717;
+				display: inline-block;
+				position: absolute;
+				left: 0;
+				
+			}
+			button {
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				display: block;
+				border: none;
+				outline: none;
+				margin-top: 10px;
+				margin-right: 20px;
+			}
+			
+			/*右边图片*/
+			.tab-content{
+				display: inline-block;
+				vertical-align: top;
+				
+				/*position: absolute;
+				left:50px;*/
+			}
+			.tab-content img {
+				width: 567px;
+				height: 326px;
+				border: none;
+				
+			}
+
+			.tab-pane {
+				border: 1px solid green;
+				margin-left: 87px;
+				
+			}
+
+		
+			/*上导航*/
+			.nav-t{
+
+				width: 657px;
+				height:50px;
+				background-color: wheat;
+				
+
+			}
+			.t-l{
+				float: left;
+			}
+			.nav-t img{
+				width: 90px;
+				height:auto;
+				border:none;
+				margin-top: 12px;
+				margin-left: 20px;
+				margin-right: 60px;
+				position: relative;
+			}
+			.t-r ul{
+				list-style-type: none;
+			}
+			.t-r li{
+				font-size: 16px;
+				float: left;
+				padding-left: 20px;				
+				line-height: 50px;
+			}
+			li a{
+				text-decoration:none;
+			}
+			/*.nav-t:after{
+				clear: both;
+				content: '';
+				height:0;
+				overflow: hidden;
+			}*/
+			.t-r li:last-child{
+				color: red;
+			}

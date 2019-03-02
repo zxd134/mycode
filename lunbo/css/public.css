@@ -1,0 +1,11 @@
+/*关于使用flex布局的好处以及要注意的地方*/
+			/*使用flex会使子元素的float,clear和 vertical-align 属性失效。使用flex可以做到float能做的事*/
+			* {
+				margin: 0 auto;
+				padding: 0;
+				/*以下代码解决auto不居中问题*/
+				text-align: center;
+			}
+			ul{
+				list-style-type: none;
+			}
